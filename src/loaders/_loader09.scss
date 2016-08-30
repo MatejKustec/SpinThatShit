@@ -1,0 +1,51 @@
+@mixin loader09(
+	$size: $loader-size,
+	$height: $loader-height,
+	$color: $loader-color,
+	$duration: $loader-animation-duration,
+	$gap: $loader-gap,
+	$align: null
+) {
+	width: $size;
+	height: $height;
+	background: $color;
+	position: relative;
+	animation: loader09 $duration ease-in-out infinite;
+	animation-delay: ($duration/5)*2;
+	&:after,
+	&:before {
+		content: '';
+		position: absolute;
+		width: $size;
+		height: $height;
+		background: $color;
+		animation: loader09 $duration ease-in-out infinite;
+	}
+	&:before {
+		right: $size + $gap;
+		animation-delay: ($duration/5)*1;
+	}
+	&:after {
+		left: $size + $gap;
+		animation-delay: ($duration/5)*3;
+	}
+	@if ($align == center) {
+		margin: 0 auto;
+	}
+	@if ($align == middle) {
+		top: 50%;
+		margin: -($size*2 + $gap) auto 0 auto;
+	}
+	@keyframes loader09{
+		0%, 100% {
+			box-shadow: 
+			0 0 0 $color,
+			0 0 0 $color;
+		}
+		50% {
+			box-shadow: 
+			0 (-$gap) 0 $color,
+			0 $gap 0 $color;
+		}
+	}
+}

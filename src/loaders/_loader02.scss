@@ -1,0 +1,23 @@
+@mixin loader02(
+	$size: $loader-size,
+	$color: $loader-color,
+	$border-size: $loader-border-size,
+	$duration: $loader-animation-duration,
+	$align: null
+) {
+	width: $size;
+	height: $size;
+	border: $border-size solid rgba($color, .25);
+	border-top-color: $color;
+	border-radius: 50%;
+	position: relative;
+	animation: loader-rotate $duration linear infinite;
+	@if ($align == center) {
+		margin: 0 auto;
+	}
+	@if ($align == middle) {
+		top: 50%;
+		margin: -$size/2 auto 0 auto;
+	}
+	@include loader-rotate;
+}

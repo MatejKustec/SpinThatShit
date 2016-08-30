@@ -1,0 +1,47 @@
+@mixin loader06(
+	$size: $loader-size,
+	$color: $loader-color,
+	$border-size: $loader-border-size,
+	$duration: $loader-animation-duration,
+	$align: null
+) {
+	width: $size;
+	height: $size;
+	border: $border-size solid transparent;
+	border-radius: 50%;
+	position: relative;
+	&:before {
+		content: '';
+		border: $border-size solid rgba($color, 0.5);
+		border-radius: 50%;
+		width: $size*1.2;
+		height: $size*1.2;
+		position: absolute;
+		top: -(($size*1.2)/2) + ($size/2) - $border-size;
+		left: -(($size*1.2)/2) + ($size/2) - $border-size;
+		animation: loader-scale $duration ease-out infinite;
+		animation-delay: $duration;
+		opacity: 0;
+	}
+	&:after {
+		content: '';
+		border: $border-size solid $color;
+		border-radius: 50%;
+		width: $size;
+		height: $size;
+		position: absolute;
+		top: -$border-size;
+		left: -$border-size;
+		animation: loader-scale $duration ease-out infinite;
+		animation-delay: $duration/2;
+
+	}
+	@if ($align == center) {
+		margin: 0 auto;
+	}
+	@if ($align == middle) {
+		top: 50%;
+		margin: -$size/2 auto 0 auto;
+	}
+	@include loader-scale;
+}

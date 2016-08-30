@@ -1,0 +1,66 @@
+@mixin loader08(
+	$size: $loader-size,
+	$color: $loader-color,
+	$duration: $loader-animation-duration,
+	$gap: $loader-gap,
+	$align: null
+) {
+	width: $size;
+	height: $size;
+	position: relative;
+	animation: loader08 $duration ease infinite;
+	@if ($align == center) {
+		margin: 0 auto;
+	}
+	@if ($align == middle) {
+		top: 50%;
+		margin: -($size*2 + $gap) auto 0 auto;
+	}
+	@keyframes loader08 {
+		0%, 100% {
+			box-shadow:
+			// top left
+			-($size/2 + $gap/2) $size 0 $color,
+			// top right
+			($size/2 + $gap/2) $size 0 rgba($color, 0.2),
+			// bottom right
+			($size/2 + $gap/2) (($size*2) + $gap) 0 rgba($color, 0.2),
+			// bottom left
+			-($size/2 + $gap/2) (($size*2) + $gap) 0 rgba($color, 0.2);
+			
+		}
+		25% {
+			box-shadow:
+			// top left
+			-($size/2 + $gap/2) $size 0 rgba($color, 0.2),
+			// top right
+			($size/2 + $gap/2) $size 0 $color,
+			// bottom right
+			($size/2 + $gap/2) (($size*2) + $gap) 0 rgba($color, 0.2),
+			// bottom left
+			-($size/2 + $gap/2) (($size*2) + $gap) 0 rgba($color, 0.2);
+		}
+		50% {
+			box-shadow:
+			// top left
+			-($size/2 + $gap/2) $size 0 rgba($color, 0.2),
+			// top right
+			($size/2 + $gap/2) $size 0 rgba($color, 0.2),
+			// bottom right
+			($size/2 + $gap/2) (($size*2) + $gap) 0 $color,
+			// bottom left
+			-($size/2 + $gap/2) (($size*2) + $gap) 0 rgba($color, 0.2);
+		}
+		75% {
+			box-shadow:
+			// top left
+			-($size/2 + $gap/2) $size 0 rgba($color, 0.2),
+			// top right
+			($size/2 + $gap/2) $size 0 rgba($color, 0.2),
+			// bottom right
+			($size/2 + $gap/2) (($size*2) + $gap) 0 rgba($color, 0.2),
+			// bottom left
+			-($size/2 + $gap/2) (($size*2) + $gap) 0 $color;
+		}
+	}
+}
