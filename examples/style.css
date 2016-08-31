@@ -6,7 +6,8 @@ html {
 
 body {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 .container {
   display: flex;
@@ -18,7 +19,15 @@ body {
   height: 280px;
   margin: 20px;
   background: #f6f9ff;
-  border-radius: 3px; }
+  border-radius: 3px;
+  position: relative; }
+
+.number {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #c3d8ff;
+  font-size: 30px; }
 
 .loader01 {
   width: 56px;

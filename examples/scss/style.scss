@@ -1,5 +1,7 @@
 @import './src/loaders';
 
+$blue: #0052ec;
+
 
 html {
   box-sizing: border-box;
@@ -12,6 +14,7 @@ html {
 body {
 	padding: 0;
 	margin: 0;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .container {
@@ -24,8 +27,17 @@ body {
 	width: 280px;
 	height: 280px;
 	margin: 20px;
-	background: lighten(#0052ec, 52%);
+	background: lighten($blue, 52%);
 	border-radius: 3px;
+	position: relative;
+}
+
+.number {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	color: lighten($blue, 42%);
+	font-size: 30px;
 }
 
 .loader01 {
