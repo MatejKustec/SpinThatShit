@@ -1,0 +1,28 @@
+.section {
+	text-align: center;
+	margin: 24px 0;
+	&__text {
+		font-size: 24px;
+		margin: 0;
+		line-height: 1.6;
+	}
+	&__button {
+		margin-top: 32px;
+	}
+	&--intro {
+		margin-bottom: 56px;
+	}
+	&--loaders {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+	}
+	&__item {
+		width: 260px;
+		height: 260px;
+		margin: 16px;
+		background: lighten($primary-color, 52%);
+		border-radius: 3px;
+		position: relative;
+	}
+}

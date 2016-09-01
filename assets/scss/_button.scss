@@ -1,0 +1,21 @@
+.button {
+	display: inline-block;
+    text-align: center;
+    line-height: 1;
+    transition: all 0.25s ease-out;
+    vertical-align: middle;
+    border-radius: 999px;
+    padding: 18px 28px;
+    font-size: 18px;
+    background: $primary-color;
+    color: #fff;
+    &:hover,
+    &:focus {
+    	background: darken($primary-color, 5%);
+    }
+    &__icon {
+        font-size: 24px;
+        margin-right: 6px;
+    }
+}
+

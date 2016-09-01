@@ -1,0 +1,98 @@
+$logo-size: 180px;
+$logo-letter-size: 30px;
+$logo-letter-line: 3px;
+
+.logo {
+	width: $logo-size;
+	height: $logo-size;
+	padding: 4px;
+	background: $primary-color;
+	border-radius: 50%;
+	text-align: center;
+	overflow: hidden;
+	display: block;
+	margin: 60px auto 0 auto;
+	&__inner {
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		background: #fff;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+	}
+	&__content {
+		width: 100%;
+	}
+	&__letters {
+		font-size: 0;
+		margin-bottom: 12px;
+	}
+	&__letter {
+		display: inline-block;
+		margin-right: $logo-letter-line;
+		&:last-child {
+			margin-right: 0;
+		}
+		div {
+			background: $primary-color;
+			height: $logo-letter-line;
+			margin-bottom: $logo-letter-line;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	&__letter--c {
+		div:nth-child(1),
+		div:nth-child(8) {
+			width: $logo-letter-line*8;
+			margin-left: $logo-letter-line*2;
+			
+		}
+		div:nth-child(2),
+		div:nth-child(7) {
+			width: $logo-letter-line*10;
+		}
+		div:nth-child(3),
+		div:nth-child(4),
+		div:nth-child(5),
+		div:nth-child(6), {
+			width: $logo-letter-line*4;
+		}
+	}
+	&__letter--s {
+		div:nth-child(1) {
+			width: $logo-letter-line*8;
+			margin-left: $logo-letter-line*2;
+		}
+		div:nth-child(2),
+		div:nth-child(7) {
+			width: $logo-letter-line*10;
+		}
+		div:nth-child(3) {
+			width: $logo-letter-line*4;
+		}
+		div:nth-child(4),
+		div:nth-child(8) {
+			width: $logo-letter-line*8;
+		}
+		div:nth-child(5) {
+			width: $logo-letter-line*8;
+			margin-left: $logo-letter-line*2;
+		}
+		div:nth-child(6) {
+			width: $logo-letter-line*4;
+			margin-left: $logo-letter-line*6;
+		}
+	}
+	&__ribbon {
+		height: 40px;
+		line-height: 40px;
+		font-size: 20px;
+		font-weight: bold;
+		letter-spacing: 1px;
+		background: $primary-color;
+		color: #fff;	
+	}
+}

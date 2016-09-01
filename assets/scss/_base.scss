@@ -1,0 +1,88 @@
+// Colors
+$primary-color: #0052ec;
+
+html {
+	-webkit-font-smoothing: antialiased;
+	 box-sizing: border-box
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: 'Karla', sans-serif;
+	color: $primary-color;
+	font-size: 100%;
+}
+
+a {
+	color: $primary-color;
+	text-decoration: none;
+	line-height: inherit;
+	cursor: pointer;
+}
+
+.link {
+	border-bottom: 1px dotted $primary-color;
+	&:hover,
+	&:focus {
+		border-bottom: 1px solid $primary-color;
+	}
+}
+
+.icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	stroke-width: 0;
+	stroke: currentColor;
+	fill: currentColor;
+	vertical-align: middle;
+	position: relative;
+	top: -1px;
+}
+
+.container {
+	max-width: 1240px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+h1 {
+	position: relative;
+	text-align: center;
+	font-size: 18px;
+	margin: 20px 0;
+	width: 100%;
+}
+
+h1 span {
+	background: #fff;
+	padding: 0 12px;
+	position: relative;
+	z-index: 1;
+}
+
+h1:before {
+	background: lighten($primary-color, 42%);
+	content: "";
+	display: block;
+	height: 1px;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+}
+
+h1:before {
+	left: 0;
+}
+
+
+.number {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	color: lighten($primary-color, 42%);
+	font-size: 30px;
+}
