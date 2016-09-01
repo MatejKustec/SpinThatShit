@@ -433,7 +433,12 @@ h1:before {
   top: 16px;
   right: 16px;
   color: #c3d8ff;
-  font-size: 30px; }
+  font-size: 30px;
+  font-weight: bold; }
+
+footer {
+  text-align: center;
+  padding: 20px 0 40px 0; }
 
 .logo {
   width: 180px;

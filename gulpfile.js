@@ -28,6 +28,10 @@ gulp.task('sass', function() {
         }))
     .pipe(sass())
     .pipe(plumber.stop())
+    .pipe(autoprefixer({
+        browsers: ['last 2 versions'],
+        cascade: false
+    }))
     .pipe(gulp.dest("assets/css"))
     .pipe(browserSync.stream());
 });

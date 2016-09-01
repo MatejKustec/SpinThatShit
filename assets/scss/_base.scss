@@ -78,11 +78,16 @@ h1:before {
 	left: 0;
 }
 
-
 .number {
 	position: absolute;
 	top: 16px;
 	right: 16px;
 	color: lighten($primary-color, 42%);
 	font-size: 30px;
+	font-weight: bold;
+}
+
+footer {
+	text-align: center;
+	padding: 20px 0 40px 0;
 }
