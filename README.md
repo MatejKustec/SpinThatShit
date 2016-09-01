@@ -1,7 +1,7 @@
 # SpinThatShit
 A set of SCSS mixins for single element loaders and spinners 
 
-[View examples](http://github.com)
+[View examples](https://matejkustec.github.io/SpinThatShit/)
 
 ## Getting started
 
