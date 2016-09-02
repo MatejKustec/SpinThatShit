@@ -51,6 +51,7 @@ Parameter | Type | Default value
 $size | Numbers | $loader-size
 $height | Numbers | $loader-height
 $color | Color | $loader-color
+$duration | Time | $loader-animation-duration
 $gap | Numbers | $loader-gap
 $align | Keyword | null
 
