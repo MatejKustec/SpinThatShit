@@ -5,8 +5,20 @@ A set of SCSS mixins for single element loaders and spinners
 
 ## Getting started
 
+
+```
+npm install spinthatshit
+```
+```
+bower install SpinThatShit
+```
+
+OR
+
 * Clone or download repo
 * Include `src` folder to your project
+
+
 
 ## Usage
 
