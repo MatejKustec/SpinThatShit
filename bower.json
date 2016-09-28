@@ -1,0 +1,21 @@
+{
+  "name": "spinthatshit",
+  "homepage": "https://github.com/MatejKustec/SpinThatShit",
+  "authors": [
+    "Matej Kustec"
+  ],
+  "description": "A set of SCSS mixins for single element loaders and spinners",
+  "main": "src/loaders.scss",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "spinthatshit",
+    "css",
+    "loaders",
+    "spinners",
+    "scss",
+    "sass"
+  ],
+  "license": "MIT"
+}
