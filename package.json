@@ -1,6 +1,6 @@
 {
   "name": "spinthatshit",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A set of SCSS mixins for single element loaders and spinners",
   "main": "index.html",
   "scripts": {
