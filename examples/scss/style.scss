@@ -2,88 +2,89 @@
 
 $blue: #0052ec;
 
-
 html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
 body {
-	padding: 0;
-	margin: 0;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .container {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
 
 .item {
-	width: 280px;
-	height: 280px;
-	margin: 20px;
-	background: lighten($blue, 52%);
-	border-radius: 3px;
-	position: relative;
+  width: 280px;
+  height: 280px;
+  margin: 20px;
+  background: lighten($blue, 52%);
+  border-radius: 3px;
+  position: relative;
 }
 
 .number {
-	position: absolute;
-	top: 16px;
-	right: 16px;
-	color: lighten($blue, 42%);
-	font-size: 30px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: lighten($blue, 42%);
+  font-size: 30px;
 }
 
 .loader01 {
-	@include loader01($align: middle);
+  @include loader01($align: middle);
 }
 
 .loader02 {
-	@include loader02($align: middle);
+  @include loader02($align: middle);
 }
 
 .loader03 {
-	@include loader03($align: middle);
+  @include loader03($align: middle);
 }
 
 .loader04 {
-	@include loader04($size: 56px, $border-size: 2px, $align: middle);
+  @include loader04($size: 56px, $border-size: 2px, $align: middle);
 }
 
 .loader05 {
-	@include loader05($border-size: 4px, $align: middle);
+  @include loader05($border-size: 4px, $align: middle);
 }
 
 .loader06 {
-	@include loader06($size: 56px, $border-size: 4px, $align: middle);
+  @include loader06($size: 56px, $border-size: 4px, $align: middle);
 }
 
 .loader07 {
-	@include loader07($size: 16px, $align: middle);
+  @include loader07($size: 16px, $align: middle);
 }
 
 .loader08 {
-	@include loader08($size: 20px, $gap: 6px, $align: middle);
+  @include loader08($size: 20px, $gap: 6px, $align: middle);
 }
 
 .loader09 {
-	@include loader09($size: 10px, $height: 48px, $gap: 8px, $duration: 1s, $align: middle);
+  @include loader09($size: 10px, $height: 48px, $gap: 8px, $duration: 1s, $align: middle);
 }
 
 .loader10 {
-	@include loader10($size: 28px, $gap: 12px, $duration: 0.9s, $align: middle);
+  @include loader10($size: 28px, $gap: 12px, $duration: 0.9s, $align: middle);
 }
 
 .loader11 {
-	@include loader11($size: 20px, $gap: 10px, $duration: .8s, $align: middle);
+  @include loader11($size: 20px, $gap: 10px, $duration: 0.8s, $align: middle);
 }
 
 .loader12 {
-	@include loader12($size: 20px, $gap: 30px, $duration: 1s, $align: middle);
+  @include loader12($size: 20px, $gap: 30px, $duration: 1s, $align: middle);
 }

@@ -1,7 +1,9 @@
 html {
   box-sizing: border-box; }
 
-*, *:before, *:after {
+*,
+*::before,
+*::after {
   box-sizing: inherit; }
 
 body {
@@ -38,8 +40,8 @@ body {
   position: relative;
   animation: loader-rotate 1s linear infinite;
   top: 50%;
-  margin: -28px auto 0 auto; }
-  .loader01:after {
+  margin: -28px auto 0; }
+  .loader01::after {
     content: '';
     width: 8px;
     height: 8px;
@@ -64,7 +66,7 @@ body {
   position: relative;
   animation: loader-rotate 1s linear infinite;
   top: 50%;
-  margin: -28px auto 0 auto; }
+  margin: -28px auto 0; }
 
 @keyframes loader-rotate {
   0% {
@@ -82,7 +84,7 @@ body {
   position: relative;
   animation: loader-rotate 1s linear infinite;
   top: 50%;
-  margin: -28px auto 0 auto; }
+  margin: -28px auto 0; }
 
 @keyframes loader-rotate {
   0% {
@@ -98,8 +100,8 @@ body {
   position: relative;
   animation: loader-rotate 1s ease-in-out infinite;
   top: 50%;
-  margin: -28px auto 0 auto; }
-  .loader04:after {
+  margin: -28px auto 0; }
+  .loader04::after {
     content: '';
     width: 10px;
     height: 10px;
@@ -124,7 +126,7 @@ body {
   position: relative;
   animation: loader-scale 1s ease-out infinite;
   top: 50%;
-  margin: -28px auto 0 auto; }
+  margin: -28px auto 0; }
 
 @keyframes loader-scale {
   0% {
@@ -143,8 +145,8 @@ body {
   border-radius: 50%;
   position: relative;
   top: 50%;
-  margin: -28px auto 0 auto; }
-  .loader06:before {
+  margin: -28px auto 0; }
+  .loader06::before {
     content: '';
     border: 4px solid rgba(0, 82, 236, 0.5);
     border-radius: 50%;
@@ -156,7 +158,7 @@ body {
     animation: loader-scale 1s ease-out infinite;
     animation-delay: 1s;
     opacity: 0; }
-  .loader06:after {
+  .loader06::after {
     content: '';
     border: 4px solid #0052ec;
     border-radius: 50%;
@@ -185,7 +187,7 @@ body {
   position: relative;
   animation: loader-circles 1s linear infinite;
   top: 50%;
-  margin: -8px auto 0 auto; }
+  margin: -8px auto 0; }
 
 @keyframes loader-circles {
   0% {
@@ -213,7 +215,7 @@ body {
   position: relative;
   animation: loader08 1s ease infinite;
   top: 50%;
-  margin: -46px auto 0 auto; }
+  margin: -46px auto 0; }
 
 @keyframes loader08 {
   0%, 100% {
@@ -233,18 +235,18 @@ body {
   animation: loader09 1s ease-in-out infinite;
   animation-delay: 0.4s;
   top: 50%;
-  margin: -28px auto 0 auto; }
-  .loader09:after, .loader09:before {
+  margin: -28px auto 0; }
+  .loader09::after, .loader09::before {
     content: '';
     position: absolute;
     width: 10px;
     height: 48px;
     background: #0052ec;
     animation: loader09 1s ease-in-out infinite; }
-  .loader09:before {
+  .loader09::before {
     right: 18px;
     animation-delay: 0.2s; }
-  .loader09:after {
+  .loader09::after {
     left: 18px;
     animation-delay: 0.6s; }
 
@@ -262,18 +264,18 @@ body {
   animation: loader10 0.9s ease alternate infinite;
   animation-delay: 0.36s;
   top: 50%;
-  margin: -42px auto 0 auto; }
-  .loader10:after, .loader10:before {
+  margin: -42px auto 0; }
+  .loader10::after, .loader10::before {
     content: '';
     position: absolute;
     width: 28px;
     height: 28px;
     border-radius: 50%;
     animation: loader10 0.9s ease alternate infinite; }
-  .loader10:before {
+  .loader10::before {
     left: -40px;
     animation-delay: 0.18s; }
-  .loader10:after {
+  .loader10::after {
     right: -40px;
     animation-delay: 0.54s; }
 
@@ -292,8 +294,8 @@ body {
   animation: loader11 0.8s ease-in-out alternate infinite;
   animation-delay: 0.32s;
   top: 50%;
-  margin: -50px auto 0 auto; }
-  .loader11:after, .loader11:before {
+  margin: -50px auto 0; }
+  .loader11::after, .loader11::before {
     content: '';
     position: absolute;
     width: 20px;
@@ -301,10 +303,10 @@ body {
     border-radius: 50%;
     box-shadow: 0 40px 0 #0052ec;
     animation: loader11 0.8s ease-in-out alternate infinite; }
-  .loader11:before {
+  .loader11::before {
     left: -30px;
     animation-delay: 0.48s; }
-  .loader11:after {
+  .loader11::after {
     right: -30px;
     animation-delay: 0.16s; }
 
@@ -321,7 +323,7 @@ body {
   position: relative;
   animation: loader12 1s linear alternate infinite;
   top: 50%;
-  margin: -50px auto 0 auto; }
+  margin: -50px auto 0; }
 
 @keyframes loader12 {
   0% {
