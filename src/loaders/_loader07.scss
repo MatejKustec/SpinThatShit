@@ -12,12 +12,13 @@
   $duration: $loader-animation-duration,
   $align: null
 ) {
+	$unique-name: unique-id();
   $dot-color: rgba($color, 0.05), rgba($color, 0.1), rgba($color, 0.2), rgba($color, 0.3), rgba($color, 0.4), rgba($color, 0.6), rgba($color, 0.8), rgba($color, 1);
   width: $size;
   height: $size;
   border-radius: 50%;
   position: relative;
-  animation: loader-circles $duration linear infinite;
+  animation: #{'loader07-'}#{$unique-name} $duration linear infinite;
   @if ($align == center) {
     margin: 0 auto;
   }
@@ -25,7 +26,7 @@
     top: 50%;
     margin: -$size / 2 auto 0;
   }
-  @keyframes loader-circles {
+  @keyframes #{'loader07-'}#{$unique-name} {
     0% {
       box-shadow: // Top
 						      0 (- circle-normal($size)) 0 0 nth($dot-color, 1),

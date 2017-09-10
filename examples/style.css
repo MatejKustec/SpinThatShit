@@ -185,11 +185,11 @@ body {
   height: 16px;
   border-radius: 50%;
   position: relative;
-  animation: loader-circles 1s linear infinite;
+  animation: loader07-u04c322d6 1s linear infinite;
   top: 50%;
   margin: -8px auto 0; }
 
-@keyframes loader-circles {
+@keyframes loader07-u04c322d6 {
   0% {
     box-shadow: 0 -27px 0 0 rgba(0, 82, 236, 0.05), 19px -19px 0 0 rgba(0, 82, 236, 0.1), 27px 0 0 0 rgba(0, 82, 236, 0.2), 19px 19px 0 0 rgba(0, 82, 236, 0.3), 0 27px 0 0 rgba(0, 82, 236, 0.4), -19px 19px 0 0 rgba(0, 82, 236, 0.6), -27px 0 0 0 rgba(0, 82, 236, 0.8), -19px -19px 0 0 #0052ec; }
   12.5% {
@@ -213,11 +213,11 @@ body {
   width: 20px;
   height: 20px;
   position: relative;
-  animation: loader08 1s ease infinite;
+  animation: loader08-ub06eb63b 1s ease infinite;
   top: 50%;
   margin: -46px auto 0; }
 
-@keyframes loader08 {
+@keyframes loader08-ub06eb63b {
   0%, 100% {
     box-shadow: -13px 20px 0 #0052ec, 13px 20px 0 rgba(0, 82, 236, 0.2), 13px 46px 0 rgba(0, 82, 236, 0.2), -13px 46px 0 rgba(0, 82, 236, 0.2); }
   25% {
@@ -232,7 +232,7 @@ body {
   height: 48px;
   background: #0052ec;
   position: relative;
-  animation: loader09 1s ease-in-out infinite;
+  animation: loader09-u3e967ec0 1s ease-in-out infinite;
   animation-delay: 0.4s;
   top: 50%;
   margin: -28px auto 0; }
@@ -242,7 +242,7 @@ body {
     width: 10px;
     height: 48px;
     background: #0052ec;
-    animation: loader09 1s ease-in-out infinite; }
+    animation: loader09-u3e967ec0 1s ease-in-out infinite; }
   .loader09::before {
     right: 18px;
     animation-delay: 0.2s; }
@@ -250,7 +250,7 @@ body {
     left: 18px;
     animation-delay: 0.6s; }
 
-@keyframes loader09 {
+@keyframes loader09-u3e967ec0 {
   0%, 100% {
     box-shadow: 0 0 0 #0052ec, 0 0 0 #0052ec; }
   50% {
@@ -261,7 +261,7 @@ body {
   height: 28px;
   border-radius: 50%;
   position: relative;
-  animation: loader10 0.9s ease alternate infinite;
+  animation: loader10-uba7e1836 0.9s ease alternate infinite;
   animation-delay: 0.36s;
   top: 50%;
   margin: -42px auto 0; }
@@ -271,7 +271,7 @@ body {
     width: 28px;
     height: 28px;
     border-radius: 50%;
-    animation: loader10 0.9s ease alternate infinite; }
+    animation: loader10-uba7e1836 0.9s ease alternate infinite; }
   .loader10::before {
     left: -40px;
     animation-delay: 0.18s; }
@@ -279,7 +279,7 @@ body {
     right: -40px;
     animation-delay: 0.54s; }
 
-@keyframes loader10 {
+@keyframes loader10-uba7e1836 {
   0% {
     box-shadow: 0 28px 0 -28px #0052ec; }
   100% {
@@ -291,7 +291,7 @@ body {
   border-radius: 50%;
   box-shadow: 0 40px 0 #0052ec;
   position: relative;
-  animation: loader11 0.8s ease-in-out alternate infinite;
+  animation: loader11-u7f16642c 0.8s ease-in-out alternate infinite;
   animation-delay: 0.32s;
   top: 50%;
   margin: -50px auto 0; }
@@ -302,7 +302,7 @@ body {
     height: 20px;
     border-radius: 50%;
     box-shadow: 0 40px 0 #0052ec;
-    animation: loader11 0.8s ease-in-out alternate infinite; }
+    animation: loader11-u7f16642c 0.8s ease-in-out alternate infinite; }
   .loader11::before {
     left: -30px;
     animation-delay: 0.48s; }
@@ -310,7 +310,7 @@ body {
     right: -30px;
     animation-delay: 0.16s; }
 
-@keyframes loader11 {
+@keyframes loader11-u7f16642c {
   0% {
     box-shadow: 0 40px 0 #0052ec; }
   100% {
@@ -321,11 +321,11 @@ body {
   height: 20px;
   border-radius: 50%;
   position: relative;
-  animation: loader12 1s linear alternate infinite;
+  animation: loader12-u6338d783 1s linear alternate infinite;
   top: 50%;
   margin: -50px auto 0; }
 
-@keyframes loader12 {
+@keyframes loader12-u6338d783 {
   0% {
     box-shadow: -60px 40px 0 2px #0052ec, -30px 40px 0 0 rgba(0, 82, 236, 0.2), 0 40px 0 0 rgba(0, 82, 236, 0.2), 30px 40px 0 0 rgba(0, 82, 236, 0.2), 60px 40px 0 0 rgba(0, 82, 236, 0.2); }
   25% {

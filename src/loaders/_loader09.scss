@@ -6,11 +6,12 @@
   $gap: $loader-gap,
   $align: null
 ) {
+  $unique-name: unique-id();
   width: $size;
   height: $height;
   background: $color;
   position: relative;
-  animation: loader09 $duration ease-in-out infinite;
+  animation: #{'loader09-'}#{$unique-name} $duration ease-in-out infinite;
   animation-delay: ($duration / 5) * 2;
 
   &::after,
@@ -20,7 +21,7 @@
     width: $size;
     height: $height;
     background: $color;
-    animation: loader09 $duration ease-in-out infinite;
+    animation: #{'loader09-'}#{$unique-name} $duration ease-in-out infinite;
   }
 
   &::before {
@@ -40,7 +41,7 @@
     top: 50%;
     margin: -($size * 2 + $gap) auto 0;
   }
-  @keyframes loader09{
+  @keyframes #{'loader09-'}#{$unique-name} {
     0%, 100% {
       box-shadow: 0 0 0 $color,
                   0 0 0 $color;
