@@ -60,11 +60,12 @@ All loaders can be also aligned to center, while including loader with parameter
 
 Parameter | Type | Default value
 ------------ | ------------- | -------------
-$size | Numbers | $loader-size
-$height | Numbers | $loader-height
+$size | Number | $loader-size
+$height | Number | $loader-height
+$border-size | Number | $loader-border-size
 $color | Color | $loader-color
 $duration | Time | $loader-animation-duration
-$gap | Numbers | $loader-gap
+$gap | Number | $loader-gap
 $align | Keyword | null
 
 **NOTE**: Some loaders may not need `$height` and `$gap` parameters.

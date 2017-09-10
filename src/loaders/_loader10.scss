@@ -5,11 +5,12 @@
   $gap: $loader-gap,
   $align: null
 ) {
+  $unique-name: unique-id();
   width: $size;
   height: $size;
   border-radius: 50%;
   position: relative;
-  animation: loader10 $duration ease alternate infinite;
+  animation: #{'loader10-'}#{$unique-name} $duration ease alternate infinite;
   animation-delay: ($duration / 5) * 2;
 
   &::after,
@@ -19,7 +20,7 @@
     width: $size;
     height: $size;
     border-radius: 50%;
-    animation: loader10 $duration ease alternate infinite;
+    animation: #{'loader10-'}#{$unique-name} $duration ease alternate infinite;
   }
 
   &::before {
@@ -42,7 +43,7 @@
   } @else {
     top: -$size;
   }
-  @keyframes loader10 {
+  @keyframes #{'loader10-'}#{$unique-name} {
     0% {
       box-shadow: 0 $size 0 (-$size) $color;
     }

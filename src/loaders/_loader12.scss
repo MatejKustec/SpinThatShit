@@ -5,11 +5,12 @@
   $gap: $loader-gap,
   $align: null
 ) {
+  $unique-name: unique-id();
   width: $size;
   height: $size;
   border-radius: 50%;
   position: relative;
-  animation: loader12 $duration linear alternate infinite;
+  animation: #{'loader12-'}#{$unique-name} $duration linear alternate infinite;
   @if ($align == center) {
     top: -$size * 2;
     margin-left: auto;
@@ -21,7 +22,7 @@
   } @else {
     top: -$size * 2;
   }
-  @keyframes loader12 {
+  @keyframes #{'loader12-'}#{$unique-name} {
     0% {
       box-shadow: ((- $gap) * 2) $size * 2 0 2px $color,
                   (- $gap) $size * 2 0 0 rgba($color, 0.2),
