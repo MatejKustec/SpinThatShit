@@ -1,16 +1,21 @@
 # SpinThatShit
-A set of SCSS mixins for single element loaders and spinners 
+A set of SCSS mixins for single element loaders and spinners.
 
 [View examples](https://matejkustec.github.io/SpinThatShit/)
 
 ## Getting started
-
 
 ```
 npm install spinthatshit
 ```
 ```
 bower install SpinThatShit
+```
+
+OR via Docker
+
+```
+docker-compose up
 ```
 
 OR
@@ -28,7 +33,7 @@ Create a div with your custom loader class name:
 <div class="your-loader"></div>
 ```
 
-In your custom class name include a mixin of a loader. All loaders are ordered by number, so you will have to take a look in examples folder for your loader number.
+In your custom class name include a mixin of a loader. All loaders are ordered by number, you will have to take a look in examples folder the loader number you're after:
 
 ```scss
 .your-loader {
@@ -36,7 +41,7 @@ In your custom class name include a mixin of a loader. All loaders are ordered b
 }
 ```
 
-In `_variables.scss` there are default settings for loaders
+Default settings for loaders are located in `_variables.scss`:
 
 ```scss
 $loader-color: #0052ec;
@@ -47,14 +52,14 @@ $loader-gap: 12px;
 $loader-animation-duration: 1s;
 ```
 
-But you can also change these default settings, while your're including loader
+However, you can also change the defaults while including a loader:
 
 ```scss
 @include loader09($size: 10px, $height: 48px, $gap: 8px, $duration: 1s, $align: middle);
 ```
 
-All loaders can be also aligned to center, while including loader with parameter `$align`,
-`$align: center` is just for x axis, `$align: middle` is for both axis.
+In addition, all loaders can be aligned to center by including a loader with `$align` parameter, 
+`$align: center` is for X axis, while `$align: middle` affects both axis.
 
 **PARAMETERS**
 
@@ -77,4 +82,10 @@ Some loaders which are using `box-shadow` for animation may be causing high cpu 
 
 ## Contributing
 
-If you have some new idea for loader/spinner or you want to fix loader just let me know.
+If you have new ideas for loaders/spinners or you would like to fix a loader, just let me know.
+
+
+## About
+
+Made by Matej Kustec
+https://matejkustec.com/
