@@ -87,5 +87,4 @@ If you have new ideas for loaders/spinners or you would like to fix a loader, ju
 
 ## About
 
-Made by Matej Kustec
-https://matejkustec.com/
+Made by Matej Kustec - https://matejkustec.com/
