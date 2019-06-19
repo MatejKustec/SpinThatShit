@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  node:
+    build: ./
+    working_dir: /app
+    volumes:
+      - ./:/app
+      - /app/node_modules/
+    ports:
+      - 127.0.0.1:3000:3000
+      - 127.0.0.1:3001:3001
+    container_name: node
