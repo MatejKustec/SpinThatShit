@@ -4,7 +4,10 @@
   "description": "A set of SCSS mixins for single element loaders and spinners",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-sass": "node-sass './examples/scss/style.scss' -o './examples/' --output-style expanded",
+    "bsync": "browser-sync start --server 'examples' --files 'examples' --no-open",
+    "watch": "nodemon -L --watch ./examples/scss/style.scss --watch ./src/ -e scss -x \"npm run compile-sass\""
   },
   "repository": {
     "type": "git",
@@ -25,9 +28,8 @@
   },
   "homepage": "https://github.com/MatejKustec/SpinThatShit#readme",
   "devDependencies": {
-    "browser-sync": "^2.14.0",
-    "gulp": "^3.9.1",
-    "gulp-plumber": "^1.1.0",
-    "gulp-sass": "^2.3.2"
+    "node-sass": "^4.12",
+    "browser-sync": "^2.26",
+    "nodemon": "^1.19"
   }
 }

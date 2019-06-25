@@ -12,7 +12,7 @@ gulp.task('serve', ['sass'], function() {
         server: "./examples"
     });
 
-    gulp.watch("./examples/scss/**/*.scss", ['sass']);
+    gulp.watch(["./examples/scss/**/*.scss", "./src/**/*.scss"], ['sass']);
     gulp.watch("./examples/*.html").on('change', browserSync.reload);
 });
 
