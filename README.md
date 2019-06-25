@@ -18,7 +18,7 @@ Clone / download repository
 and
 
 * Include `src` folder in your project, OR
-* Run with docker
+* Run with Docker
     ```
     docker-compose up
     ```
