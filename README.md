@@ -12,16 +12,17 @@ npm install spinthatshit
 bower install SpinThatShit
 ```
 
-OR via Docker
-
-```
-docker-compose up
-```
-
 OR
 
-* Clone or download repo
-* Include `src` folder to your project
+Clone / download repository
+and
+
+* Include `src` folder to your project OR
+* Run with docker
+    ```
+    docker-compose up
+    ```
+
 
 
 
