@@ -1,4 +1,10 @@
-@mixin loader08( $size: $loader-size, $color: $loader-color, $duration: $loader-animation-duration, $gap: $loader-gap, $align: null ) {
+@mixin loader08(
+    $size: $loader-size, 
+    $color: $loader-color, 
+    $duration: $loader-animation-duration, 
+    $gap: $loader-gap, 
+    $align: null 
+  ) {
   $unique-name: unique-id();
   width: $size;
   height: $size;
@@ -17,46 +23,46 @@
   @keyframes #{'loader08-'}#{$unique-name} {
     0%, 100% {
       box-shadow: // top left
-      -(math.div($size, 2) + math.div($gap, 2)) $size 0 $color,
-      // top right
-      (math.div($size, 2) + math.div($gap, 2)) $size 0 rgba($color, 0.2),
-      // bottom right
-      (math.div($size, 2) + math.div($gap, 2)) (($size * 2) + $gap) 0 rgba($color, 0.2),
-      // bottom left
-      -(math.div($size, 2) + math.div($gap, 2)) (($size * 2) + $gap) 0 rgba($color, 0.2);
+                  -(math.div($size, 2) + math.div($gap, 2)) $size 0 $color,
+                  // top right
+                  (math.div($size, 2) + math.div($gap, 2)) $size 0 rgba($color, 0.2),
+                  // bottom right
+                  (math.div($size, 2) + math.div($gap, 2)) (($size * 2) + $gap) 0 rgba($color, 0.2),
+                  // bottom left
+                  -(math.div($size, 2) + math.div($gap, 2)) (($size * 2) + $gap) 0 rgba($color, 0.2);
     }
 
     25% {
       box-shadow: // top left
-      -(math.div($size, 2) + math.div($gap, 2)) $size 0 rgba($color, 0.2),
-      // top right
-      (math.div($size, 2) + math.div($gap, 2)) $size 0 $color,
-      // bottom right
-      (math.div($size, 2) + math.div($gap, 2)) (($size * 2) + $gap) 0 rgba($color, 0.2),
-      // bottom left
-      -(math.div($size, 2) + math.div($gap, 2)) (($size * 2) + $gap) 0 rgba($color, 0.2);
+                  -(math.div($size, 2) + math.div($gap, 2)) $size 0 rgba($color, 0.2),
+                  // top right
+                  (math.div($size, 2) + math.div($gap, 2)) $size 0 $color,
+                  // bottom right
+                  (math.div($size, 2) + math.div($gap, 2)) (($size * 2) + $gap) 0 rgba($color, 0.2),
+                  // bottom left
+                  -(math.div($size, 2) + math.div($gap, 2)) (($size * 2) + $gap) 0 rgba($color, 0.2);
     }
 
     50% {
       box-shadow: // top left
-      -(math.div($size, 2) + math.div($gap, 2)) $size 0 rgba($color, 0.2),
-      // top right
-      (math.div($size, 2) + math.div($gap, 2)) $size 0 rgba($color, 0.2),
-      // bottom right
-      (math.div($size, 2) + math.div($gap, 2)) (($size * 2) + $gap) 0 $color,
-      // bottom left
-      -(math.div($size, 2) + math.div($gap, 2)) (($size * 2) + $gap) 0 rgba($color, 0.2);
+                  -(math.div($size, 2) + math.div($gap, 2)) $size 0 rgba($color, 0.2),
+                  // top right
+                  (math.div($size, 2) + math.div($gap, 2)) $size 0 rgba($color, 0.2),
+                  // bottom right
+                  (math.div($size, 2) + math.div($gap, 2)) (($size * 2) + $gap) 0 $color,
+                  // bottom left
+                  -(math.div($size, 2) + math.div($gap, 2)) (($size * 2) + $gap) 0 rgba($color, 0.2);
     }
 
     75% {
       box-shadow: // top left
-      -(math.div($size, 2) + math.div($gap, 2)) $size 0 rgba($color, 0.2),
-      // top right
-      (math.div($size, 2) + math.div($gap, 2)) $size 0 rgba($color, 0.2),
-      // bottom right
-      (math.div($size, 2) + math.div($gap, 2)) (($size * 2) + $gap) 0 rgba($color, 0.2),
-      // bottom left
-      -(math.div($size, 2) + math.div($gap, 2)) (($size * 2) + $gap) 0 $color;
+                  -(math.div($size, 2) + math.div($gap, 2)) $size 0 rgba($color, 0.2),
+                  // top right
+                  (math.div($size, 2) + math.div($gap, 2)) $size 0 rgba($color, 0.2),
+                  // bottom right
+                  (math.div($size, 2) + math.div($gap, 2)) (($size * 2) + $gap) 0 rgba($color, 0.2),
+                  // bottom left
+                  -(math.div($size, 2) + math.div($gap, 2)) (($size * 2) + $gap) 0 $color;
     }
   }
 }
