@@ -1,4 +1,10 @@
-@mixin loader10( $size: $loader-size, $color: $loader-color, $duration: $loader-animation-duration, $gap: $loader-gap, $align: null ) {
+@mixin loader10( 
+    $size: $loader-size, 
+    $color: $loader-color, 
+    $duration: $loader-animation-duration, 
+    $gap: $loader-gap, 
+    $align: null 
+  ) {
   $unique-name: unique-id();
   width: $size;
   height: $size;

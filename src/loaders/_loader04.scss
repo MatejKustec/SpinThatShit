@@ -1,4 +1,9 @@
-@mixin loader04( $size: $loader-size, $color: $loader-color, $border-size: $loader-border-size, $duration: $loader-animation-duration, $align: null ) {
+@mixin loader04(
+    $size: $loader-size, 
+    $color: $loader-color, 
+    $border-size: $loader-border-size, 
+    $duration: $loader-animation-duration, $align: null 
+  ) {
   $dot: round($size - (0.82 * $size));
   width: $size;
   height: $size;

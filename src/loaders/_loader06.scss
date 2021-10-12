@@ -1,4 +1,10 @@
-@mixin loader06( $size: $loader-size, $color: $loader-color, $border-size: $loader-border-size, $duration: $loader-animation-duration, $align: null ) {
+@mixin loader06(
+    $size: $loader-size, 
+    $color: $loader-color, 
+    $border-size: $loader-border-size, 
+    $duration: $loader-animation-duration, 
+    $align: null 
+  ) {
   width: $size;
   height: $size;
   border: $border-size solid transparent;
