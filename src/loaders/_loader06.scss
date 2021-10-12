@@ -1,10 +1,4 @@
-@mixin loader06(
-  $size: $loader-size,
-  $color: $loader-color,
-  $border-size: $loader-border-size,
-  $duration: $loader-animation-duration,
-  $align: null
-) {
+@mixin loader06( $size: $loader-size, $color: $loader-color, $border-size: $loader-border-size, $duration: $loader-animation-duration, $align: null ) {
   width: $size;
   height: $size;
   border: $border-size solid transparent;
@@ -18,8 +12,8 @@
     width: $size * 1.2;
     height: $size * 1.2;
     position: absolute;
-    top: -(($size * 1.2) / 2) + ($size / 2) - $border-size;
-    left: -(($size * 1.2) / 2) + ($size / 2) - $border-size;
+    top: -(math.div(($size * 1.2), 2)) + (math.div($size, 2)) - $border-size;
+    left: -(math.div(($size * 1.2), 2)) + (math.div($size, 2)) - $border-size;
     animation: loader-scale $duration ease-out infinite;
     animation-delay: $duration;
     opacity: 0;
@@ -35,15 +29,17 @@
     top: -$border-size;
     left: -$border-size;
     animation: loader-scale $duration ease-out infinite;
-    animation-delay: $duration / 2;
+    animation-delay: math.div($duration, 2);
   }
 
   @if ($align == center) {
     margin: 0 auto;
   }
+
   @if ($align == middle) {
     top: 50%;
-    margin: -$size / 2 auto 0;
+    margin: -(math.div($size, 2)) auto 0;
   }
+
   @include loader-scale;
 }

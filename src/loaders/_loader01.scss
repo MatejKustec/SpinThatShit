@@ -1,6 +1,6 @@
 @function circle-position($size, $border-size, $coordinate) {
-  $center: ($size / 2) - $border-size - ($border-size / 2);
-  $half-size-border: ($size / 2) - $border-size + ($border-size / 2);
+  $center: math.div($size, 2) - $border-size - math.div($border-size, 2);
+  $half-size-border: math.div($size, 2) - $border-size + math.div($border-size, 2);
 	// root value sqrt(2)/2 = 0.70710678118
   $root: 0.70710678118;
   @if $coordinate == y {
@@ -29,7 +29,7 @@
   }
   @if ($align == middle) {
     top: 50%;
-    margin: -$size / 2 auto 0;
+    margin: -(math.div($size, 2)) auto 0;
 	}
 
   &::after {
