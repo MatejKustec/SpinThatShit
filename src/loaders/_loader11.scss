@@ -12,7 +12,7 @@
   box-shadow: 0 $size * 2 0 $color;
   position: relative;
   animation: #{'loader11-'}#{$unique-name} $duration ease-in-out alternate infinite;
-  animation-delay: ($duration / 5) * 2;
+  animation-delay: math.div($duration, 5) * 2;
 
   &::after,
   &::before {
@@ -27,13 +27,13 @@
 
   &::before {
     left: -($size + $gap);
-    animation-delay: ($duration / 5) * 3;
+    animation-delay: math.div($duration, 5) * 3;
 
   }
 
   &::after {
     right: -($size + $gap);
-    animation-delay: ($duration / 5) * 1;
+    animation-delay: math.div($duration, 5) * 1;
   }
 
   @if ($align == center) {

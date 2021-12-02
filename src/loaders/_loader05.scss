@@ -16,7 +16,7 @@
   }
   @if ($align == middle) {
     top: 50%;
-    margin: -$size / 2 auto 0;
+    margin: -(math.div($size, 2)) auto 0;
   }
   @include loader-scale;
 }

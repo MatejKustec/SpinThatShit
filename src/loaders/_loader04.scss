@@ -1,10 +1,9 @@
 @mixin loader04(
-  $size: $loader-size,
-  $color: $loader-color,
-  $border-size: $loader-border-size,
-  $duration: $loader-animation-duration,
-  $align: null
-) {
+    $size: $loader-size, 
+    $color: $loader-color, 
+    $border-size: $loader-border-size, 
+    $duration: $loader-animation-duration, $align: null 
+  ) {
   $dot: round($size - (0.82 * $size));
   width: $size;
   height: $size;
@@ -20,17 +19,19 @@
     border-radius: 50%;
     background: $color;
     position: absolute;
-    top: -$border-size - $dot / 2 + $border-size / 2;
+    top: -$border-size - math.div($dot, 2) + math.div($border-size, 2);
     left: 50%;
-    margin-left: -$dot / 2;
+    margin-left: -(math.div($dot, 2));
   }
 
   @if ($align == center) {
     margin: 0 auto;
   }
+
   @if ($align == middle) {
     top: 50%;
-    margin: -$size / 2 auto 0;
+    margin: -(math.div($size, 2)) auto 0;
   }
+
   @include loader-rotate;
 }

@@ -1,18 +1,18 @@
 @mixin loader09(
-  $size: $loader-size,
-  $height: $loader-height,
-  $color: $loader-color,
-  $duration: $loader-animation-duration,
-  $gap: $loader-gap,
-  $align: null
-) {
+    $size: $loader-size, 
+    $height: $loader-height, 
+    $color: $loader-color, 
+    $duration: $loader-animation-duration, 
+    $gap: $loader-gap, 
+    $align: null 
+  ) {
   $unique-name: unique-id();
   width: $size;
   height: $height;
   background: $color;
   position: relative;
   animation: #{'loader09-'}#{$unique-name} $duration ease-in-out infinite;
-  animation-delay: ($duration / 5) * 2;
+  animation-delay: math.div($duration, 5) * 2;
 
   &::after,
   &::before {
@@ -26,29 +26,31 @@
 
   &::before {
     right: $size + $gap;
-    animation-delay: ($duration / 5) * 1;
+    animation-delay: math.div($duration, 5) * 1;
   }
 
   &::after {
     left: $size + $gap;
-    animation-delay: ($duration / 5) * 3;
+    animation-delay: math.div($duration, 5) * 3;
   }
 
   @if ($align == center) {
     margin: 0 auto;
   }
+
   @if ($align == middle) {
     top: 50%;
     margin: -($size * 2 + $gap) auto 0;
   }
+
   @keyframes #{'loader09-'}#{$unique-name} {
     0%, 100% {
-      box-shadow: 0 0 0 $color,
+      box-shadow: 0 0 0 $color, 
                   0 0 0 $color;
     }
 
     50% {
-      box-shadow: 0 (-$gap) 0 $color,
+      box-shadow: 0 (-$gap) 0 $color, 
                   0 $gap 0 $color;
     }
   }
