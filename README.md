@@ -1,3 +1,5 @@
+## ⚠️ THIS REPO IS DEPRECATED ⚠️
+
 # SpinThatShit
 A set of SCSS mixins for single element loaders and spinners 
 
